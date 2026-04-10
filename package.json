@@ -1,0 +1,24 @@
+{
+  "name": "ai-agent-workforce",
+  "version": "0.1.0",
+  "description": "A multi-agent workforce that autonomously researches topics and produces reports",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "example": "tsx examples/run-research.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.7",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
