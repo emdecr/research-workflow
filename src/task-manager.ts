@@ -162,7 +162,7 @@ export class TaskManager {
     pending: ["in-progress"],
     "in-progress": ["completed", "rejected", "failed"],
     completed: [], // Terminal state — no transitions out
-    rejected: ["in-progress"], // Can only retry
+    rejected: ["in-progress", "failed"], // Can retry, or fail if retries exhausted
     failed: [], // Terminal state — no transitions out
   };
 
